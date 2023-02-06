@@ -11,8 +11,8 @@ import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
 
 // Data Injection
-import User from "./models/User.js";
-import { dataUser } from "./data/index.js";
+// import User from "./models/User.js";
+// import { dataUser } from "./data/index.js";
 
 // Configuration
 dotenv.config();
@@ -42,5 +42,5 @@ mongoose
     app.listen(PORT, () => console.log(`Server Port :${PORT}`));
 
     // Only add once
-    User.insertMany(dataUser);
+    // User.insertMany(dataUser);
   });
