@@ -106,7 +106,6 @@ const Sidebar = ({
   useEffect(() => {
     setActive(pathname.substring(1));
   }, [pathname]);
-  console.log(user)
 
   return (
     <Box component="nav">
